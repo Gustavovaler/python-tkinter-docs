@@ -1,6 +1,6 @@
 @extends('layouts.header')
 
 @section('content')
-<h1>Inicio</h1>
+<h1>widgets</h1>
     
 @endsection

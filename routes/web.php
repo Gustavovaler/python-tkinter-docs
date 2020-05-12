@@ -16,3 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/clase_tk',function () {
+    return view('clase_tk');
+});
+
+Route::get('/widgets',function () {
+    return view('widgets');
+});
+Route::get('/colores',function () {
+    return view('colores');
+});
