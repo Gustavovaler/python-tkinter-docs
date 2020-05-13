@@ -4,19 +4,24 @@
 <div class="container">	
     <h1 class="mt-4">Clase Tk()</h1>
     <h3>Método:  <i>config</i>(clave=valor)</h3>
-    <div class="lista">
+    <div class="row">
+        <div class="col-md-3">
+            <ul>
+                <li><a href="#bd">bd</a></li>
+                <li><a href="#borderwidth">borderwidth</a></li>
+                <li><a href="">class</a></li>
+                <li><a href="">menu</a></li>
+                <li><a href="">relief</a></li>
+                <li><a href="">screen</a></li>
+                <li><a href="">use</a></li>
+                <li><a href="">background</a></li>
+                <li><a href="#bg">bg</a></li>
+                <li><a href="">colormap</a></li>
+                <li><a href="">container</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3">
         <ul>
-            <li><a href="">bd</a></li>
-            <li><a href="">borderwidth</a></li>
-            <li><a href="">class</a></li>
-            <li><a href="">menu</a></li>
-            <li><a href="">relief</a></li>
-            <li><a href="">screen</a></li>
-            <li><a href="">use</a></li>
-            <li><a href="">background</a></li>
-            <li><a href="">bg</a></li>
-            <li><a href="">colormap</a></li>
-            <li><a href="">container</a></li>
             <li><a href="">cursor</a></li>
             <li><a href="">height</a></li>
             <li><a href="">highlightbackground</a></li>
@@ -26,9 +31,14 @@
             <li><a href="">pady</a></li>
             <li><a href="">takefocus</a></li>
             <li><a href="">visual</a></li>
-            <li><a href="">width</a></li>
+            <li><a href="#width">width</a></li>
         </ul>
+        </div>
+        <div class="col-md-6">
+        <img id="ej1" src="{{asset ('/img/ventana-ej1.png')}}" alt="">
+        </div>
     </div>
+   
     <hr>
 
     <div class="seccion-ventana mt-2">
@@ -53,26 +63,28 @@
                 </h5>
                 <p class="card-text">
                     (str) <br>
-                    Color de fondo de la ventana. Vea la lista de colores <a href="colores.html">aqui.</a>
+                    Color de fondo de la ventana. Vea la lista de colores <a href="/colores">aqui.</a><br>
+                    Tambien es posible colores en hexadecimal E.j "#ffccff"
                 </p>
             </div>
             
         </div>
         <!-- ********************************************** -->
         <div class="card">
-            <div class="card-body">
+            <div class="card-body"  id="bg">
                 <h5 class="card-title">
                 bg = background
                 </h5>
                 <p class="card-text">
                     (str) <br>
-                    Color de fondo de la ventana. Vea la lista de colores <a href="colores.html">aqui.</a>
+                    Color de fondo de la ventana. Vea la lista de colores <a href="/colores">aqui.</a><br>
+                    Tambien es posible colores en hexadecimal E.j "#ffccff"
                 </p>
             </div>
             
         </div>
         <!-- ********************************************** -->
-        <div class="card">
+        <div class="card" id="borderwidth">
             <div class="card-body">
                 <h5 class="card-title">
                 borderwidth
@@ -150,7 +162,7 @@
             
         </div>
         <!-- ******************************************** -->
-        <div class="card">
+        <div class="card"  id="width">
             <div class="card-body">
                 <h5 class="card-title">
                 width
@@ -184,6 +196,31 @@
                     los otros 2 son la posicion en la pantalla del usuario.
                 </h6>
 
+                </p>
+            </div>
+            
+        </div>
+        <!-- ******************************************** -->
+    </div>
+    <hr>
+    <div>
+        <h3>Método:  <i>resizable</i> obj => {width=True, height=True}</h3>
+    
+        <!-- ******************************************** -->
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">
+                Tk.resizable(width=True, height=True)
+                </h5>
+                <p class="card-text">
+                Ej: <br>
+                ventana = Tk() <br>
+                ventana.resizable(width=False, height=False) <br>
+                <h6>Si width es False el usuario no podra ajustar el ancho de la ventana <br>
+                    Si height es False el usuario no podrá ajustar el alto de la ventana. <br>
+                    Si se omite, el valor por defecto es True para ambos.
+                </h6>
+    
                 </p>
             </div>
             

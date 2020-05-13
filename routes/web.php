@@ -27,3 +27,6 @@ Route::get('/widgets',function () {
 Route::get('/colores',function () {
     return view('colores');
 });
+Route::get('/posicionamiento',function () {
+    return view('posicionamiento');
+});
